@@ -1,64 +1,63 @@
 body {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: #111;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-    .booking-container {
-      max-width: 1100px;
-      width: 100%;
-      padding: 20px;
-    }
+.booking-container {
+  max-width: 1100px;
+  width: 100%;
+  padding: 20px;
+}
 
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 2.5rem;
-    }
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
 
-    form {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 30px;
-      border-radius: 10px;
-    }
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 10px;
+}
 
-    input,
-    select {
-      width: 100%;
-      padding: 10px;
-      font-size: 1rem;
-      border: 1px solid #fff;
-      background: transparent;
-      color: #fff;
-      border-radius: 4px;
-    }
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 4px;
+}
 
-    input::placeholder,
-    select:invalid {
-      color: #aaa;
-    }
+input::placeholder,
+select:invalid {
+  color: #aaa;
+}
 
-    button {
-      grid-column: span 3;
-      padding: 12px;
-      font-size: 1rem;
-      background: #fff;
-      color: #000;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
+button {
+  grid-column: span 3;
+  padding: 12px;
+  font-size: 1rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 
-    button:hover {
-      background: #ccc;
-    }
- 
+button:hover {
+  background: #ccc;
+}
