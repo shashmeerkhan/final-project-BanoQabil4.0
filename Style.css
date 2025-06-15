@@ -1,0 +1,171 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.toggle-mode {
+  position: relative;
+  top: 10px;
+  right: 10px;
+  background: #f1f1f1;
+  color: #000;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 20px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+body.dark .toggle-mode {
+  background: #333;
+  color: #fff;
+}
+
+/* Navbar Layout */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1px 40px;
+  background-color: #fff;
+  margin: 0 60px;
+  position: fixed;
+}
+
+body.dark .navbar {
+  background-color: #1e1e1e;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+.logo {
+  background-color: white;
+  padding: 5px 18px;
+  border-radius: 50px;
+}
+/* Search */
+.search-container {
+  flex: 1;
+  max-width: 500px;
+  margin: 0 30px;
+  position: relative;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px 15px;
+  padding-right: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+body.dark .search-container input {
+  background-color: #333;
+  color: white;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+/* Delivery */
+.delivery-banner {
+  background-color: #000;
+  padding: 5px 12px;
+  border-radius: 5px;
+}
+.delivery-banner img {
+  height: 35px;
+}
+
+/* Navigation */
+.main-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  background-color: white;
+ 
+}
+
+body.dark .main-menu {
+  background-color: #1e1e1e;
+  border-top: 1px solid #444;
+}
+
+.main-menu a {
+  margin: 4px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+body.dark .main-menu a {
+  color: #ccc;
+}
+
+.main-menu a:hover {
+  color: red;
+}
+
+.slider {
+  height: 80vh;
+  width: 100vw;
+
+}
+/* ------------------ */
+/* Mobile View Styles */
+/* ------------------ */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .search-container {
+    margin: 15px 0;
+  }
+
+  .main-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-menu a {
+    margin: 8px 0;
+    padding: 8px 16px;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+    width: 90%;
+    text-align: center;
+  }
+
+  .main-menu a:hover {
+    background-color: #e3c0c1;
+    color: red;
+  }
+}

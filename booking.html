@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Booking</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+  <div class="booking-container">
+    <h1>DELIVERY BOOKING</h1>
+    <form>
+      <div>
+        <label>Name</label>
+        <input type="text" placeholder="Enter Name" required>
+      </div>
+      <div>
+        <label>Contact No</label>
+        <input type="tel" placeholder="Enter Contact No" required>
+      </div>
+      <div>
+        <label>Residence</label>
+        <input type="text" placeholder="Enter Address" required>
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" required>
+      </div>
+      <div>
+        <label>No Of Ticket (1 to 20)</label>
+        <input type="number" min="1" max="20" placeholder="Enter No Of Ticket" required>
+      </div>
+      <div>
+        <label>Select Branch</label>
+        <select required>
+          <option value="" disabled selected>SELECT BRANCH</option>
+          <option>DHA</option>
+          <option>Askari IV</option>
+          
+        </select>
+      </div>
+      <div>
+        <label>Movie</label>
+        <select required>
+          <option value="" disabled selected>Select Movies</option>
+          <option>Godzilla x Kong</option>
+          <option>Dune: Part 2</option>
+          <option>Joker 2</option>
+        </select>
+      </div>
+      <div>
+        <label>Date</label>
+       <select name="date" id="date">
+        <option value=""><data()></data></option>
+       </select>
+      </div>
+      <div>
+        <label>Time</label>
+        <input type="time" required>
+      </div>
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+</body>
+</html>
