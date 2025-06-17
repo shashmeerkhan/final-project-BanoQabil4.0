@@ -124,3 +124,38 @@ body {
     font-size: 16px;
   }
 }
+.site-footer {
+  background-color: #111;
+  color: #ddd;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.footer-logo h2 {
+  color: #ddd;
+margin-right: 1rem;
+text-decoration: none;
+}
+.footer-links a {
+  color: #ddd;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  color: #ffcb05;
+
+}
+.footer-contact p {
+  margin: 4px 0;
+}
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
