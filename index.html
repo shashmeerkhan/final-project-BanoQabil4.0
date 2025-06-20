@@ -5,51 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nueplex</title>
 
-    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="images/fevi-icon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
-    <!-- Header -->
-    <header class="navbar">
-      <div class="logo">
-        <a href="./index.html"
-          ><img src="images/nueplexlogo.png" alt="Nueplex Logo"
-        /></a>
+    <header class="site-header">
+      <div class="site-header__logo">
+        <a href="./index.html">
+          <img src="images/nueplexlogo.png" alt="Nueplex Logo" />
+        </a>
       </div>
 
-      <div class="search-container">
-        <input type="text" placeholder="Search..." />
-        <span class="search-icon">🔍</span>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
 
-      <div class="delivery-banner">
-        <a href="booking.html"
-          ><img src="images/ticket-online.png" alt="Delivery Booking"
-        /></a>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." class="search-bar__input" />
+        <span class="search-bar__icon">🔍</span>
+      </div>
+
+      <div class="site-header__booking-link">
+        <a href="./pages/booking.html">
+          <img src="images/ticket-online.png" alt="Delivery Booking" />
+        </a>
       </div>
     </header>
 
-    <!-- Navigation Menu -->
-    <nav class="main-menu">
-      <a href="#">NUE NEWS</a>
-      <a href="#">TICKETS INFO</a>
-      <a href="about.html">ABOUT US</a>
-      <a href="#">PRIVATE SCREENING</a>
-      <a href="#">NUEPLEX CARES</a>
-      <a href="#">JB FILMS</a>
-      <a href="#">ADVERTISE</a>
-      <a href="contact.html">CONTACT US</a>
+    <nav class="main-nav" id="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="./pages/nue-news.html" class="main-nav__link">NUE NEWS</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="./pages/ticket-info.html" class="main-nav__link">TICKETS INFO</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="./pages/about.html" class="main-nav__link">ABOUT US</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="./pages/private-screening.html" class="main-nav__link">PRIVATE SCREENING</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="./pages/nueplex-care.html" class="main-nav__link">NUEPLEX CARES</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="./pages/flim.html" class="main-nav__link">JB FILMS</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="./pages/advertise.html" class="main-nav__link">ADVERTISE</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="./pages/contact.html" class="main-nav__link">CONTACT US</a>
+        </li>
+      </ul>
     </nav>
 
-    <!-- slider -->
-    <div class="slider">
+    <div class="hero-slider">
       <div
         id="carouselExampleInterval"
         class="carousel slide"
@@ -118,24 +144,25 @@
       </div>
     </div>
 
-    <div class="showing">
-      <h1>NOW SHOWING</h1>
-      <div class="filters">
-        <div class="filter"><span><i class="fa-solid fa-clock"></i></span> SHOW TIME</div>
-        <select>
+    <section class="now-showing">
+      <h1 class="section-title">NOW SHOWING</h1>
+      <div class="filters-group">
+        <div class="filter-item filter-item--time">
+          <span><i class="fa-solid fa-clock"></i></span> SHOW TIME
+        </div>
+        <select class="filter-item__select">
           <option selected>Select Site</option>
           <option>DHA</option>
           <option>Askari vi</option>
         </select>
-        <select>
+        <select class="filter-item__select">
           <option selected>All Cinemas</option>
           <option>Royal Cinema</option>
           <option>Regular Cinema</option>
           <option>VIP Cinema</option>
           <option>Platinum Cinema</option>
-
         </select>
-        <select>
+        <select class="filter-item__select">
           <option selected>All Movies</option>
           <option>LILO & STITCH</option>
           <option>MISSION: IMPOSSIBLE - THE FINAL RECKONING</option>
@@ -150,17 +177,16 @@
           <option>ELIO</option>
           <option>28 YEARS LATER</option>
         </select>
-        <select>
+        <select class="filter-item__select">
           <option selected>Select Date</option>
           <option>Today</option>
-          <option>Tomorrow</option> 
-
+          <option>Tomorrow</option>
         </select>
       </div>
-    </div>
+    </section>
 
-    <section class="experience">
-      <h2>NUEPLEX EXPERIENCE</h2>
+    <section class="experience-section">
+      <h2 class="section-title">NUEPLEX EXPERIENCE</h2>
       <div class="gallery">
         <img src="images/Asakri-cinema-hall.png" alt="Outside View" />
         <img src="images/askari-iv-cinema-lobby.png" alt="Lounge Seats" />
@@ -170,37 +196,50 @@
       </div>
     </section>
 
-    <!-- Bootstrap Script -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo-section">
+          <img src="./images/nueplexlogo.png" alt="Nueplex Cinemas Logo" />
+        </div>
+
+        <div class="footer__nav-links">
+          <ul class="footer__nav-list">
+            <li><a href="./pages/nue-news.html" class="footer__nav-link">Nue News</a></li>
+            <li><a href="pages/ticket-info.html" class="footer__nav-link">Tickets Info</a></li>
+            <li><a href="pages/contact.html" class="footer__nav-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__stay-in-touch">
+          <h3 class="footer__heading">STAY IN TOUCH</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icons__link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icons__link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icons__link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      <div class="copyright__container">
+        <p class="copyright__text">
+          &copy; Copyright 2024 Nue Multiplex & Entertainment Square Co. Pvt
+          Ltd. All Rights Reserved.
+        </p>
+        <p class="copyright__text">
+          Powered by <span class="copyright__powered-by-o">O</span>
+        </p>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<<<<<<< Updated upstream
-
-    <footer class="site-footer">  
-      <div class="footer-content"> 
-<div class="footer-logo">
-  <h2>Nueplex</h2>
-  <p>Experience movies like never before</p>
-</div>
-<div class="footer-link">
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="booking.html">Book ticket</a></li>
-    <li><a href="about.html">about us</a></li>
-    <li><a href="#">Now Showing</a></li>
-    <li><a href="#">Upcoming</a></li>
-  </ul>
-</div>
-<div class="footer-contact" >
-  <p>Email : info@nueolex.com</p>
-  <p>Phone : +92-123456789</p>
-
-</div>
-      </div>
-      <div class="footer-bottom">
-        <p>2025 Nueplex Cinema. All rights reserved</p>
-      </div>
-       </footer>
-   
-=======
->>>>>>> Stashed changes
+   <script src="script.js"></script>
   </body>
 </html>

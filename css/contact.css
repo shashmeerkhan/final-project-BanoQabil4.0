@@ -1,0 +1,72 @@
+/* ========== LOCATIONS SECTION (Fixed) ========== */
+.locations-section {
+  margin-top: 60px;
+}
+
+.location-card {
+  background: #1d1d1d; /* darker card */
+  border: 1px solid #2c2c2c;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.03);
+  transition: transform 0.3s ease;
+}
+
+.location-card:hover {
+  transform: translateY(-5px);
+}
+
+.location-card-title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #f1f1f1;
+}
+
+.location-card-address,
+.location-card-phone {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+.map-placeholder-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.map-placeholder {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #333;
+}
+
+.map-data-text {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+.view-map-link {
+  color: #e44;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.view-map-link:hover {
+  text-decoration: underline;
+}
+
+/* Heading Styling */
+.locations-heading {
+  color: #b31b1b;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Responsive Grid */
+.location-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
