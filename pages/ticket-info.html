@@ -6,6 +6,8 @@
     <title>Nueplex</title>
 
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../css/ticket-info.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="../images/fevi-icon.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -77,17 +79,284 @@
       </ul>
     </nav>
 
+    <section class="ticket-info-section">
+      <div class="bg-gray-800 p-8 sm:p-8 shadow-2xl max-w-8xl w-full min-h-screen">
+      <div class="mx-14">
+        <div class="flex items-center text-xl sm:text-2xl font-bold mb-4">
+          <i class="fas fa-film mr-3 text-white-400"></i>
+          Digital 2D Movies Standard Rates
+        </div>
+        <div class="overflow-x-auto rounded-lg">
+          <table class="min-w-full bg-gray-700 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-gray-600 text-left text-sm sm:text-base">
+                <th class="p-3 sm:p-4 font-semibold text-gray-200 w-2/5">
+                  Mission: Impossible - The Final Reckoning
+                </th>
+                <th class="p-3 sm:p-4 font-semibold text-gray-200 w-1/4">
+                  Cinema 1 to 4
+                </th>
+                <th class="p-3 sm:p-4 font-semibold text-gray-200 w-1/4">
+                  Royal Cinema
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">How to Train Your Dragon</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">Love Guru (Pakistani)</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">Deedpak (Pakistani)</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">SICCIN 6 (Urdu Dubbed)</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">Final Destination: Bloodless</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">The Ritual</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">
+                  Final Destination: Bloodless (Urdu dubbed)
+                </td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">Elio</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">28 Years Later</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">Ballerina</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">Ballerina (Urdu Dubbed)</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">
+                  Mission: Impossible - The Final Reckoning (Urdu Dubbed)
+                </td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">Lilo & Stitch</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">Karate Kid: Legends</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">
+                  Siccin 8 (Turkish - English Subtitles)
+                </td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">Elio (Urdu Dubbed)</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">F1: THE MOVIE</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">M3GAN 2.0</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">F1: The Movie (Urdu Dubbed)</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">Jurassic World: Rebirth</td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">
+                  Jurassic World: Rebirth (Urdu Dubbed)
+                </td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+              <tr class="hover:bg-gray-600 transition duration-150 ease-in-out">
+                <td class="p-3 sm:p-4">
+                  Unseen Sula - Indonesian (with English subtitles)
+                </td>
+                <td class="p-3 sm:p-4">Rs. 1000</td>
+                <td class="p-3 sm:p-4">Rs. 1400</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
+      <div class="mb-8">
+        <div class="flex items-center text-xl sm:text-2xl font-bold mb-4 mt-6">
+          <i class="fas fa-glasses mr-3 text-green-400"></i>
+          Digital 3D Movies Standard Rates
+        </div>
+        <div class="overflow-x-auto rounded-lg">
+          <table class="min-w-full bg-gray-700 rounded-lg overflow-hidden">
+            <thead>
+              <tr class="bg-gray-600 text-left text-sm sm:text-base">
+                <th class="p-3 sm:p-4 font-semibold text-gray-200 w-2/5"></th>
+                <th class="p-3 sm:p-4 font-semibold text-gray-200 w-1/4">
+                  Cinema 1 to 4
+                </th>
+                <th class="p-3 sm:p-4 font-semibold text-gray-200 w-1/4">
+                  Royal Cinema
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="border-b border-gray-600 hover:bg-gray-600 transition duration-150 ease-in-out"
+              >
+                <td class="p-3 sm:p-4">Standard</td>
+                <td class="p-3 sm:p-4"></td>
+                <td class="p-3 sm:p-4">Rs. 450/-</td>
+              </tr>
+              <tr class="hover:bg-gray-600 transition duration-150 ease-in-out">
+                <td class="p-3 sm:p-4">Clip-on</td>
+                <td class="p-3 sm:p-4"></td>
+                <td class="p-3 sm:p-4">Rs. 550/-</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
+      <div>
+        <div class="flex items-center text-xl sm:text-2xl font-bold mb-4 mt-6">
+          <i class="fas fa-clipboard-list mr-3 text-red-400"></i>
+          TERMS & CONDITIONS
+        </div>
+        <ul
+          class="list-disc pl-5 sm:pl-8 space-y-2 text-sm sm:text-base text-gray-300"
+        >
+          <li>
+            Tickets are Non-Refundable, Non-Exchangeable & Non-Transferable
+          </li>
+          <li>Cinema entry allowed to vaccinated persons</li>
+          <li>
+            Management will not be responsible for any compensation or refund if
+            you do not attend the show which is mentioned on the ticket
+          </li>
+          <li>Please co-operate with the security staff.</li>
+          <li>
+            Recording with a mobile camera or any other camera is strictly
+            prohibited
+          </li>
+          <li>
+            Usage of mobile phones is strictly prohibited inside the auditoriums
+          </li>
+          <li>
+            Children under 3 years of age are not allowed at shows followed
+            inside the cinemas.
+          </li>
+          <li>Children above 3 years of age will be charged full ticket</li>
+          <li>
+            Outside eatables or drinks are not allowed in the cinema complex
+          </li>
+          <li>
+            The ticket gives you only permission for the entire duration of your
+            visit. ( Management reserves the right to deny entry if you are
+            unable to produce a valid ticket for that show time )
+          </li>
+          <li>
+            Rights of admission are reserved ( Management reserves the right to
+            deny entry or ask anyone to leave the premises at anytime without
+            assigning any reason )
+          </li>
+          <li>
+            If, for any reason, the film is not exhibited on the date and time
+            mentioned on the ticket then you will be entitled to obtain a 100%
+            refund.
+          </li>
+        </ul>
+      </div>
+    </div>
+    </section>
 
-
-
-
-
-
-
-
-    
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__logo-section">
@@ -96,22 +365,36 @@
 
         <div class="footer__nav-links">
           <ul class="footer__nav-list">
-            <li><a href="nue-news.html" class="footer__nav-link">Nue News</a></li>
-            <li><a href="ticket-info.html" class="footer__nav-link">Tickets Info</a></li>
-            <li><a href="contact.html" class="footer__nav-link">Contact Us</a></li>
+            <li>
+              <a href="nue-news.html" class="footer__nav-link">Nue News</a>
+            </li>
+            <li>
+              <a href="ticket-info.html" class="footer__nav-link"
+                >Tickets Info</a
+              >
+            </li>
+            <li>
+              <a href="contact.html" class="footer__nav-link">Contact Us</a>
+            </li>
           </ul>
         </div>
 
         <div class="footer__stay-in-touch">
           <h3 class="footer__heading">STAY IN TOUCH</h3>
           <div class="social-icons">
-            <a href="https://www.facebook.com/NueplexCinemas" class="social-icons__link">
+            <a
+              href="https://www.facebook.com/NueplexCinemas"
+              class="social-icons__link"
+            >
               <i class="fab fa-facebook-f"></i>
             </a>
             <a href="https://x.com/NueplexCinemas" class="social-icons__link">
               <i class="fab fa-twitter"></i>
             </a>
-            <a href="https://instagram.com/NueplexCinemas" class="social-icons__link">
+            <a
+              href="https://instagram.com/NueplexCinemas"
+              class="social-icons__link"
+            >
               <i class="fab fa-instagram"></i>
             </a>
           </div>
@@ -132,6 +415,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>
