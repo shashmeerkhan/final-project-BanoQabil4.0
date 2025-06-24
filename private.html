@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Private Screening</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/fevi-icon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="./index.html"><img src="images/nueplexlogo.png" alt="Nueplex Logo" /></a>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search..." />
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <div class="delivery-banner">
+            <a href="booking.html"><img src="images/ticket-online.png" alt="Delivery Booking" /></a>
+        </div>
+
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="main-menu">
+        <a href="nuecare.html">NUE NEWS</a>
+        <a href="#">TICKETS INFO</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="private.html">PRIVATE SCREENING</a>
+        <a href="nuecare.html">NUEPLEX CARES</a>
+        <a href="jbflims.html">JB FILMS</a>
+        <a href="advertise.html">ADVERTISE</a>
+        <a href="contact.html">CONTACT US</a>
+    </nav>
+
+    <section class="private-screening">
+        <h1>Private Screening</h1>
+        <p style="color: aliceblue;">
+
+            Nueplex is now the preferred cinema venture amongst media houses, corporates, universities and schools. Be
+            it private screenings for premieres, product launch events, school excursions, office parties, or even
+            casual get-togethers with family/friends, Nueplex offers a complete big screen experience with living room
+            privacy.
+
+            To make your bookings, email at <a href="media.manager@nuemultiplex.com"></a>
+        </p>
+
+        <div class="carousel-wrapper">
+            <button class="arrow prev">❮</button>
+            <div class="carousel">
+                <img src="https://www.nueplex.com/assets/uploads/pages/1729871476-25-10-2024-0.jpeg"
+                    alt="Private Screening 1">
+                <img src="https://www.nueplex.com/assets/uploads/pages/1729871461-25-10-2024-0.jpeg"
+                    alt="Private Screening 2">
+            </div>
+            <button class="arrow next">❯</button>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const images = document.querySelectorAll('.carousel img');
+        const dots = document.querySelectorAll('.dot');
+        let index = 0;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(${-index * 100}vw)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            index = (index - 1 + images.length) % images.length;
+            updateCarousel();
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            index = (index + 1) % images.length;
+            updateCarousel();
+        });
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                index = i;
+                updateCarousel();
+            });
+        });
+
+        updateCarousel();
+    </script>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Nueplex</h2>
+                <p>Experience movies like never before</p>
+            </div>
+            <div class="footer-link">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booking.html">Book ticket</a></li>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a href="#">Now Showing</a></li>
+                    <li><a href="#">Upcoming</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>Email : info@nueolex.com</p>
+                <p>Phone : +92-123456789</p>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>2025 Nueplex Cinema. All rights reserved</p>
+        </div>
+    </footer>
+
+
+</body>
