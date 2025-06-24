@@ -78,6 +78,73 @@
     </nav>
 
 
+<!-- JB Films Hero Section -->
+  <section class="hero">
+    <img class="hero-img" src="images/nueplexlogo.png" alt="JB Films Background">
+    <div class="overlay">
+      <h1>JB Films</h1>
+      <p>Producing high-budget and high-quality content, fabricating genre-defining films, recognizing and launching new and unexplored talent in films, exploring newer territories, bringing state-of-the-art production facilities, communicating socially responsible stories, and most importantly working with the simple aim of reviving the Pakistani entertainment industry. JB Films is changing the way films are scripted, produced, and consumed in Pakistan.
+
+Being the leading film production company of Pakistan, JB Films is founded by Mirza Jamil Baig, Chairperson of JB Group. Having the largest purpose-built multiplex chain of Pakistan, Nueplex Cinemas, as its sister company, this production house is committed to bringing avant-garde entertainment to its audiences. It’s the only fully integrated production house in the country that has a slate of at least 3 mega films a year. This integration can be reflected in the production house’s ability to manage and lead all realms of a production process; pre-production to post production, distribution, marketing, talent hunt and management, brand partnerships, design and studios.
+
+Apart from creating commercial films, JB Films is also committed to conveying the national stories of Pakistan to the local and global audiences through various mediums. For example, Tooba Baig, Producer at JB Films, produced Pakistan’s first docudrama ever, “Paani Ke Pankh.” This docudrama sheds light upon Pakistan’s miraculous and one-of-a-kind journey from “War to Water.” The Prime Minister of Pakistan, Mr. Imran Khan, appreciated these efforts of JB Films, and officially launched the docudrama on 28th January 2021. In the future, JB Films promises to cover various Pakistani journeys and stories while exploring a wide array of story-telling platforms.
+
+JB Films is committed to taking Pakistani talent and entertainment to the global stage and promises to lead as a key maker of modern cinema in Pakistan.</p>
+    </div>
+  </section>
+
+  
+
+  <!-- JB Films Social Links -->
+  <section class="social-links" style="text-align: center; padding: 2rem;">
+    <h2>Follow Us</h2>
+    <a href="https://www.facebook.com/NueplexCinemas/" target="_blank" style="margin: 0 1rem; text-decoration: none; font-size: 1.5rem;">📘 Facebook</a>
+    <a href="https://www.instagram.com/nueplexofficial/" target="_blank" style="margin: 0 1rem; text-decoration: none; font-size: 1.5rem;">📸 Instagram</a>
+  </section>
+
+  <!-- JB Films Slider Section -->
+  
+  <section class="slider-section">
+  <div class="carousel-wrapper">
+    <button class="arrow prev">❮</button>
+    <div class="carousel">
+      <div class="slide">
+        <img src="https://www.nueplex.com/assets/uploads/pages/1647681077-19-03-2022-0.jpeg" alt="JB Slide 1" />
+      </div>
+      <div class="slide">
+        <img src="https://www.nueplex.com/assets/uploads/pages/1647681077-19-03-2022-0.jpeg" alt="JB Slide 2" />
+      </div>
+    </div>
+    <button class="arrow next">❯</button>
+  </div>
+</section>
+
+
+  <!-- JS for Slider -->
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const slides = carousel.querySelectorAll('img');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    let current = 0;
+
+    function updateCarousel() {
+      const offset = current * -100;
+      carousel.style.transform = `translateX(${offset}vw)`;
+    }
+
+    next.addEventListener('click', () => {
+      current = (current + 1) % slides.length;
+      updateCarousel();
+    });
+
+    prev.addEventListener('click', () => {
+      current = (current - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+
+    updateCarousel();
+  </script>      
 
 
 

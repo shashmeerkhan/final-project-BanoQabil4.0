@@ -78,12 +78,67 @@
     </nav>
 
 
+ <!-- Nueplex Cares Hero Section -->
+  <section class="cares-hero">
+    <img class="hero-img" src="https://www.nueplex.com/assets/web/images/main-site-bg.jpg"
+      alt="Nueplex Cares Background">
+    <div class="overlay">
+      <h1>Nueplex Cares</h1>
+    </div>
+  </section>
+
+  <!-- Nueplex Cares Content -->
+  <section class="cares-content">
+    <div class="container-care" style="color: aliceblue;">
+      <p>
+        At Nueplex, we believe that entertainment is for all, and should be accessible to every fraction of society. We
+        play an active role in making our belief a reality by hosting multiple NGO’s on a weekly basis. Our team at
+        Nueplex truly cares and hopes to spread smiles always.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Nueplex Cares Image Carousel -->
+  <section class="cares-gallery">
+    <div class="carousel-wrapper">
+      <button class="arrow prev">❮</button>
+      <div class="carousel">
+        <img src="https://www.nueplex.com/assets/uploads/pages/1614589731-01-03-2021-0.jpeg" alt="Cares Image 1">
+        <img src="https://www.nueplex.com/assets/uploads/pages/1614589731-01-03-2021-1.jpeg" alt="Cares Image 2">
+        <img src="https://www.nueplex.com/assets/uploads/pages/1614589731-01-03-2021-2.jpeg" alt="Cares Image 3">
+        <img src="https://www.nueplex.com/assets/uploads/pages/1614589731-01-03-2021-3.jpeg" alt="Cares Image 4">
+      </div>
+      <button class="arrow next">❯</button>
+    </div>
+  </section>
+
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const slides = carousel.querySelectorAll('img');
+    const prev = document.querySelector('.prev');
+    const next = document.querySelector('.next');
+    let current = 0;
+
+    function updateCarousel() {
+      const offset = current * -100;
+      carousel.style.transform = `translateX(${offset}vw)`;
+    }
+
+    next.addEventListener('click', () => {
+      current = (current + 1) % slides.length;
+      updateCarousel();
+    });
+
+    prev.addEventListener('click', () => {
+      current = (current - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+
+    updateCarousel();
+  </script>
 
 
-
-
-
-    
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__logo-section">
