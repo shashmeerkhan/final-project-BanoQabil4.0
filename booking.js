@@ -71,3 +71,4 @@ document.getElementById("submitBooking").addEventListener("click", () => {
   alert("Booking successful!");
   selectedSeats = [];
 });
+
