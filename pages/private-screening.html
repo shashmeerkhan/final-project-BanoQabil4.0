@@ -77,6 +77,66 @@
       </ul>
     </nav>
 
+    <section class="private-screening">
+        <h1>Private Screening</h1>
+        <p style="color: aliceblue;">
+
+            Nueplex is now the preferred cinema venture amongst media houses, corporates, universities and schools. Be
+            it private screenings for premieres, product launch events, school excursions, office parties, or even
+            casual get-togethers with family/friends, Nueplex offers a complete big screen experience with living room
+            privacy.
+
+            To make your bookings, email at <a href="media.manager@nuemultiplex.com"></a>
+        </p>
+
+        <div class="carousel-wrapper">
+            <button class="arrow prev">❮</button>
+            <div class="carousel">
+                <img src="https://www.nueplex.com/assets/uploads/pages/1729871476-25-10-2024-0.jpeg"
+                    alt="Private Screening 1">
+                <img src="https://www.nueplex.com/assets/uploads/pages/1729871461-25-10-2024-0.jpeg"
+                    alt="Private Screening 2">
+            </div>
+            <button class="arrow next">❯</button>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <script>
+        const carousel = document.querySelector('.carousel');
+        const images = document.querySelectorAll('.carousel img');
+        const dots = document.querySelectorAll('.dot');
+        let index = 0;
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(${-index * 100}vw)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[index].classList.add('active');
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            index = (index - 1 + images.length) % images.length;
+            updateCarousel();
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            index = (index + 1) % images.length;
+            updateCarousel();
+        });
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                index = i;
+                updateCarousel();
+            });
+        });
+
+        updateCarousel();
+    </script>      
+
 
 
 
